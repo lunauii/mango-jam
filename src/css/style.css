@@ -4,9 +4,14 @@ html, body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #ffffff;
-    background: linear-gradient(#ba7c4a, #f7eca3);
+    background: linear-gradient(#ba7c4a, #fff8cc);
     background-color: #ae7c53;
-    min-height: 100vh;
+    min-height: 150vh;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
 }
 
 header {
@@ -14,7 +19,85 @@ header {
     text-align: center;
 }
 
+main {
+    padding: 0 20vmin;
+    display: grid;
+    min-height: 180vh;
+    grid:
+        "apply countdown countdown countdown theme" 0.5fr
+        "about about about newbies newbies" 2fr
+        "rules rules criteria criteria criteria" 1.5fr
+        "news news news news socials" 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px 5px;
+}
 
+fieldset {
+    min-height: 100%;
+    text-align: left;
+    border-radius: 15px;
+    background-color: #ad744eab
+}
+
+fieldset legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer {
+    color: #a3490e;
+}
+
+#faq {
+    background-color: #444444;
+    margin: 2em 20vmin;
+    padding: 1em;
+}
+
+#apply {
+    grid-area: apply;
+}
+
+#countdown {
+    grid-area: countdown;
+}
+
+#theme {
+    grid-area: theme;
+}
+
+#about {
+    grid-area: about;
+}
+
+#newbies {
+    grid-area: newbies;
+}
+
+#rules {
+    grid-area: rules;
+}
+
+#criteria {
+    grid-area: criteria;
+}
+
+#socials {
+    grid-area: socials;
+}
+
+#news {
+    grid-area: news;
+}
+
+#faq {
+    grid-area: faq;
+}
+
+.test-div {
+    width: 100%;
+    height: auto;
+}
 
 #logo {
     text-align: center;
