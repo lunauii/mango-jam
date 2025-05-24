@@ -8,6 +8,9 @@ Mango Jam! Game Jam *(stylized as Mango Jam Game Jam)* is a game jam event based
 
 To develop Mango Jam's website, please fork this repository. Clone your fork onto your local computer and then submit a pull request with your code once it is ready for review.
 
+> [!WARNING]
+> A rewrite of the website is currently underway. Please submit pull requests to the `v2` branch instead of `main`.
+
 Make sure to run the following command in the project directory before creating or testing any code:
 ```bash
 npm i
